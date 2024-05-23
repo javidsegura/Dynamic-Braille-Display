@@ -33,24 +33,29 @@ def send_input(input_text: str, form):
 
 
 def set_up_port(final_input):
+
+  """
+  
+  Connect to the arduino's serial and send transormed input
+
+  Parameters:
+    - fianl_input: final cleaned input
+
+  Returns: None
+
+  """
   
   # List available ports with indices
   serial_port = "/dev/cu.usbmodem1101"
   baud_rate = 9600
   serial_instance = serial.Serial(serial_port,baud_rate, timeout=1)
 
- 
-
-  # try:
-  #     serial_instance.open()
-  # except serial.SerialException as e:
-  #     print(f"Could not open port {serial_port}: {e}")
-  #     exit()
 
   print(f"Final input is {final_input}")
   
-  time.sleep(5)
-  
+  time.sleep(5) # IS THIS REALLY NECCESARY??
+
+  # Sending input to Arduino 
   serial_instance.write(final_input.encode("utf-8"))
 
   print("Message has already been sent")
