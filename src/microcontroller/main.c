@@ -2,8 +2,8 @@
 
 // 1. Set up
 #define BITS_CHARACTER 6
-#define LOW_ANGLE 90
-#define HIGH_ANGLE 60
+#define LOW_ANGLE 90 
+#define HIGH_ANGLE 60 // Servos are set inversely (downwards), thus a decreasement when HIGH
 
 // 1.1 Binary representation of each ASCII character
 int binary[][BITS_CHARACTER] = {
