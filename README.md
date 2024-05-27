@@ -6,4 +6,5 @@ Use of web-app to receive multimodal input (written or spoken) and be interepret
 
 <img src = "https://github.com/javidsegura/Dynamic-Braille-Display/assets/129964070/87dae6c9-5a84-45a1-b859-ecdaf3a4b1c5" alt = "web_app" width = 250 >
 
-
+## NOT ASSEMBLED VERSION:
+![IMG_8238 3](https://github.com/javidsegura/Dynamic-Braille-Display/assets/129964070/5444be01-c644-4a95-9a96-eaee0154cdeb)
